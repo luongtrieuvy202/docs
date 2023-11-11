@@ -1,0 +1,22 @@
+body {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+:is(html[class~="dark"]) {
+  .dark-logo {
+    display: block;
+  }
+  .light-logo {
+    display: none;
+  }
+}
+
+:is(html[class~="light"]) {
+  .dark-logo {
+    display: none;
+  }
+  .light-logo {
+    display: block;
+  }
+}

@@ -1,18 +1,21 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
+import { LogoImage } from "./partials/logo";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <LogoImage />,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/dryerjs/dryerjs",
   },
   chat: {
-    link: 'https://discord.com',
+    link: "https://discord.gg/dcRkQ4e9",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: "https://github.com/dryerjs/docs",
   footer: {
-    text: 'Nextra Docs Template',
+    text: "DryerJS © 2023 - All rights reserved.",
   },
-}
+  primaryHue: 161,
+  primarySaturation: 100,
+};
 
-export default config
+export default config;
